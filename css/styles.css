@@ -1,0 +1,133 @@
+/* geral */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  color: #323232;
+  border: none;
+}
+
+input, label {
+  display: block;
+  outline: none;
+  width: 100%;
+}
+
+a {
+  color: #E60084;
+}
+
+body {
+  background: #2C3E50;
+  background: -webkit-linear-gradient(to right, #FD746C, #2C3E50); 
+  background: linear-gradient(to right, #FD746C, #2C3E50);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 2rem;
+}
+
+/* form */
+#main-container {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+#main-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.full-box {
+  flex: 1 1 100%;
+  position: relative;
+}
+
+.half-box {
+  flex: 1 1 45%;
+  position: relative;
+}
+
+.btn {
+  margin: 1rem 3rem 0;
+}
+
+.data input{
+  padding-bottom: 5px;
+  width: max-content;
+}
+
+.spacing {
+  margin-right: 2.5%;
+}
+
+.passwordInvalid {
+  background-color: #ff1a1a;
+  color: white;
+  text-align: center;
+  vertical-align: text-bottom;
+  font-weight: bold;
+  font-size: .8rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+}
+
+label {
+  font-weight: bold;
+  font-size: .8rem;
+}
+
+input {
+  border-bottom: 2px solid #323232;
+  padding: 10px;
+  font-size: .9rem;
+  margin-bottom: 40px;
+}
+
+input:focus {
+  border-color: #E60084;
+}
+
+input[type="submit"] {
+  background: #2C3E50;
+  background: -webkit-linear-gradient(to right, #2C3E50, #FD746C); 
+  background: linear-gradient(to right, #2C3E50, #FD746C);
+  color: #FFF;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+
+#agreement {
+  margin-right: 5px;
+}
+
+#agreement, #agreement-label {
+  display: inline-block;
+  width: auto;
+}
+
+.error-validation {
+  color: #ff1a1a;
+  position: absolute;
+  top: 57px;
+  font-size: 12px;
+}
+
+.template {
+  display: none;
+}
