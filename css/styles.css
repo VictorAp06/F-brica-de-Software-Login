@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
 /* geral */
 * {
   margin: 0;
@@ -30,18 +34,19 @@ body {
 
 /* form */
 #main-container {
-  width: 500px;
+  width: 600px;
   margin-left: auto;
   margin-right: auto;
   background-color: #FFF;
   border-radius: 10px;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 #main-container h1 {
+  font-weight: 600;
   text-align: center;
   margin-bottom: 25px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 form {
@@ -56,21 +61,28 @@ form {
 }
 
 .half-box {
-  flex: 1 1 45%;
+  flex: 1 1 60%;
+  position: relative;
+}
+
+.box-side {
+  flex: 1 1 50%;
   position: relative;
 }
 
 .btn {
-  margin: 1rem 3rem 0;
+  margin: 1rem 1rem 0;
 }
 
 .data input{
-  padding-bottom: 5px;
-  width: max-content;
+  padding-bottom: 10px;
+  width: 230px;
 }
 
-.spacing {
-  margin-right: 2.5%;
+.periodo {
+  padding: 0;
+  padding-bottom: 5px;
+  width: 230px;
 }
 
 .passwordInvalid {
@@ -87,14 +99,18 @@ form {
 
 label {
   font-weight: bold;
-  font-size: .8rem;
+  font-size: 1.2rem;
 }
 
-input {
+input, select{
   border-bottom: 2px solid #323232;
   padding: 10px;
   font-size: .9rem;
   margin-bottom: 40px;
+}
+
+select:focus {
+  border-color: #E60084;
 }
 
 input:focus {
@@ -109,19 +125,20 @@ input[type="submit"] {
   border: none;
   border-radius: 20px;
   height: 40px;
+  font-weight: 700;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 
-#agreement {
-  margin-right: 5px;
-}
-
 #agreement, #agreement-label {
+  font-size: .8rem;
+  margin-right: 5px;
   display: inline-block;
   width: auto;
 }
 
 .error-validation {
+  padding: 1rem;
   color: #ff1a1a;
   position: absolute;
   top: 57px;

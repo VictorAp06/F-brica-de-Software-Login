@@ -8,6 +8,11 @@ session_start();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
   <title>Login</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -41,7 +46,7 @@ session_start();
       </div>
 
       <div>
-        <label for="agreement" id="agreement-label">Não possui cadastro?<a href="cadastro.html">Registre-se</a></label>
+        <label for="agreement" id="agreement-label">Não possui cadastro?<a href="cadastro.html"> Registre-se</a></label>
       </div>
 
     </form>
