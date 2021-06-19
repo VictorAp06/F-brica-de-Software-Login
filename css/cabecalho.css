@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #ab5858d8;
+    width: 100%;
+    height: 6rem;
+}
+
+.header-logo h1 {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 550;
+    text-shadow: .2rem .2rem 1px rgba(0, 0, 0, .4);
+    font-family:  "Baloo 2", Arial, Helvetica, sans-serif;
+    line-height: 2rem;
+    padding: .4rem .2rem;
+    text-align: center;
+}
+a{
+    font-size: 1.2rem;
+    font-weight: 550;
+    font-family: "Baloo 2", Arial, Helvetica, sans-serif;
+}
+.menu {
+    z-index: 150;
+    width: 100%;
+    height: 3.65rem;
+    background-color: rgba(124, 83, 124, 0.733);
+  }
+  
+  .menu ul {
+    list-style: none;
+    position: relative;
+  }
+  
+  .menu ul li {
+    width: 150px;
+    float: left;
+  }
+  
+  .menu a {
+    text-align: center;
+    color: black;
+    padding: 14px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .menu a:hover {
+    background-color: #f4f4f4;
+    color: #555;
+  }
+  
+  .menu ul ul{
+    z-index: 150;
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  .menu ul li:hover ul{
+    z-index: 150;
+    visibility: visible;
+  }
+  
+  .menu ul ul li{
+    z-index: 150;
+    background-color: rgba(124, 83, 124, 0.733);
+    border-bottom: 1px solid #ffffff;
+    float: none;
+  }

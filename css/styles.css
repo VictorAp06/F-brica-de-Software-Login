@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+/* geral */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  color: #323232;
+  border: none;
+}
+
+input, label {
+  display: block;
+  outline: none;
+}
+
+a {
+  color: #E60084;
+}
+
+body {
+  background: #2C3E50;
+  background: -webkit-linear-gradient(to right, #FD746C, #2C3E50); 
+  background: linear-gradient(to right, #FD746C, #2C3E50);
+  width: 100%;
+}
+
+/* form */
+#main-container {
+  height: auto;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FFF;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+#main-container h1 {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+.full-box {
+  flex: 1 1 100%;
+  position: relative;
+}
+
+.half-box {
+  flex: 1 1 40%;
+  position: relative;
+}
+
+.box-side {
+  flex: 1 1 50%;
+  position: relative;
+}
+
+.data input{
+  padding-bottom: 10px;
+  width: 230px;
+}
+
+.select-periodo {
+  padding: 0;
+  padding-bottom: 5px;
+  width: 230px;
+}
+
+.passwordInvalid {
+  background-color: #ff1a1a;
+  color: white;
+  text-align: center;
+  vertical-align: text-bottom;
+  font-weight: bold;
+  font-size: .8rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 20px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+input, select{
+  width: 600px;
+  border-bottom: 2px solid #323232;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: .9rem;
+  margin-right: 1rem;
+  margin-bottom: 40px;
+}
+
+select:focus {
+  border-color: #E60084;
+}
+
+input:focus {
+  border-color: #E60084;
+}
+
+input[type="submit"] {
+  background: #2C3E50;
+  background: -webkit-linear-gradient(to right, #2C3E50, #FD746C); 
+  background: linear-gradient(to right, #2C3E50, #FD746C);
+  color: #FFF;
+  border: none;
+  border-radius: 20px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  margin-left: 1rem;
+  display: inline-block;
+  width: auto;
+}
+
+.msg-erro {
+  padding: 1rem;
+  color: #ff1a1a;
+  position: absolute;
+  top: 57px;
+  font-size: 12px;
+}
